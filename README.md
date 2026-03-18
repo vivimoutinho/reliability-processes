@@ -12,7 +12,7 @@ This repository provides frameworks and documentation practices to ensure incide
 - Process improvement workflows
 
 ## Key Components
-- Postmortem templates focused on learning, not blame
+- Postmortem processes focused on root cause analysis and long-term reliability improvements
 - Root cause analysis guidelines
 - Documentation practices for traceability
 - Continuous improvement workflows
