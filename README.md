@@ -1,22 +1,26 @@
 # Reliability Processes & Postmortems
 
-This repository serves as a governance library for building resilient operations. It focuses on the intersection of technical systems, business processes, and continuous improvement.
+A process-driven framework for improving system reliability through structured analysis, data-driven governance, and continuous improvement.
 
-## Strategy & Scope
-* **Incident Governance:** Standardizing how we analyze failures.
-* **Root Cause Analysis (RCA):** Moving beyond "human error" to find systemic flaws.
-* **Business-Tech Alignment:** Using SRE principles to optimize non-technical workflows (e.g., Call Centers, Support).
+## Purpose
+This repository serves as a central library for documentation practices that transform production incidents into meaningful systemic improvements. It bridges the gap between technical infrastructure and business operations.
 
-## Reliability Case Studies
-Detailed analyses of past optimizations and their business impact:
+## Key Components
+* **Incident Governance:** Frameworks for standardizing how we analyze failures.
+* **Root Cause Analysis (RCA):** Methods focused on systemic flaws rather than human error.
+* **Operational Excellence:** Applying SRE principles (Observability, SLOs) to business workflows.
 
-1. [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) - Implementing IVR-based observability for 3CX.
-2. [Call Routing Optimization](./call-routing-optimization.md) - Reducing abandonment rates through logic redesign.
+## Featured Case Studies
+| Case Study | Focus | Key Technology |
+| :--- | :--- | :--- |
+| [Call Routing Optimization](./call-routing-optimization.md) | Reducing abandonment & improving efficiency | 3CX, PostgreSQL, Data Pipelines |
+| [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) | User experience observability (CX) | IVR Flow, SQL, Reporting |
 
-## Core Principles
-* **Blameless Culture:** Focus on system improvement, not individual mistakes.
-* **Traceability:** Ensuring every decision is backed by data (PostgreSQL/3CX logs).
-* **Actionable Outcomes:** Every postmortem must result in at least one structural change.
+## Why this matters
+Reliable systems are not built with technology alone. High-availability environments require strong processes that ensure learning from failures and consistent operational excellence across all touchpoints.
 
 ---
-*“Reliability is not just about uptime; it’s about the consistency of the customer experience.”*
+### Core Approach
+* **Blameless Culture:** We investigate the *how* and *why*, not the *who*.
+* **Traceability:** Ensuring all operational changes are backed by structured data.
+* **Continuous Improvement:** Every incident is an opportunity to harden the system.
