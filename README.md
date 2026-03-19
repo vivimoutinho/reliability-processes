@@ -12,7 +12,6 @@ Detailed analyses of past optimizations and their business impact:
 
 1. [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) - Implementing IVR-based observability for 3CX.
 2. [Call Routing Optimization](./call-routing-optimization.md) - Reducing abandonment rates through logic redesign.
-3. [Process Automation](./call-routing-improvement.md) - Transitioning from manual CSV updates to structured database routing.
 
 ## Core Principles
 * **Blameless Culture:** Focus on system improvement, not individual mistakes.
