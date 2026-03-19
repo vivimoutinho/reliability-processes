@@ -1,24 +1,23 @@
 # Reliability Processes & Postmortems
 
-Process-driven approach to improving system reliability through structured analysis and continuous improvement.
+This repository serves as a governance library for building resilient operations. It focuses on the intersection of technical systems, business processes, and continuous improvement.
 
-## Purpose
-This repository provides frameworks and documentation practices to ensure incidents lead to meaningful improvements and prevent recurrence.
+## Strategy & Scope
+* **Incident Governance:** Standardizing how we analyze failures.
+* **Root Cause Analysis (RCA):** Moving beyond "human error" to find systemic flaws.
+* **Business-Tech Alignment:** Using SRE principles to optimize non-technical workflows (e.g., Call Centers, Support).
 
-## Scope
-- Postmortem processes and templates
-- Root cause analysis practices
-- Documentation standards
-- Process improvement workflows
+## Reliability Case Studies
+Detailed analyses of past optimizations and their business impact:
 
-## Key Components
-- Postmortem processes focused on root cause analysis and long-term reliability improvements
-- Root cause analysis guidelines
-- Documentation practices for traceability
-- Continuous improvement workflows
+1. [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) - Implementing IVR-based observability for CX.
+2. [Call Routing Optimization](./call-routing-optimization.md) - Reducing abandonment rates through logic redesign.
+3. [Process Automation](./call-routing-improvement.md) - Transitioning from manual CSV updates to structured database routing.
 
-## Why this matters
-Reliable systems are built not only with technology, but with strong processes that ensure learning from failures and consistent operational excellence.
+## Core Principles
+* **Blameless Culture:** Focus on system improvement, not individual mistakes.
+* **Traceability:** Ensuring every decision is backed by data (PostgreSQL/3CX logs).
+* **Actionable Outcomes:** Every postmortem must result in at least one structural change.
 
-## Approach
-Emphasis on accountability, transparency, and continuous improvement — ensuring every incident contributes to a more resilient system.
+---
+*“Reliability is not just about uptime; it’s about the consistency of the customer experience.”*
