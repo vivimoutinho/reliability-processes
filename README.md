@@ -14,7 +14,7 @@ This repository serves as a central library for documentation practices that tra
 | Case Study | Focus | Key Technology |
 | :--- | :--- | :--- |
 | [Call Routing Optimization](./call-routing-optimization.md) | Reducing abandonment & improving efficiency | 3CX, PostgreSQL, Data Pipelines |
-| [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) | User experience observability (CX) | IVR Flow, SQL, Reporting |
+| [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) | User experience observability (3CX) | IVR Flow, SQL, Reporting |
 
 ## Why this matters
 Reliable systems are not built with technology alone. High-availability environments require strong processes that ensure learning from failures and consistent operational excellence across all touchpoints.
