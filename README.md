@@ -10,7 +10,7 @@ This repository serves as a governance library for building resilient operations
 ## Reliability Case Studies
 Detailed analyses of past optimizations and their business impact:
 
-1. [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) - Implementing IVR-based observability for CX.
+1. [Call Center Satisfaction Metrics](./call-center-satisfaction-metrics.md) - Implementing IVR-based observability for 3CX.
 2. [Call Routing Optimization](./call-routing-optimization.md) - Reducing abandonment rates through logic redesign.
 3. [Process Automation](./call-routing-improvement.md) - Transitioning from manual CSV updates to structured database routing.
 
