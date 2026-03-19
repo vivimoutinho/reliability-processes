@@ -1,55 +1,49 @@
-## Scenario: Call Routing Optimization in High-Volume Support Environment
+# Case Study: Call Routing Optimization & Reliability
+**Focus:** Infrastructure Efficiency | Incident Reduction | Data-Driven Operations
 
 ### Context
-High call abandonment rate in a customer support center due to inefficient call routing in an IP telephony system (3CX).
+High call abandonment rates in a mission-critical customer support center due to legacy, inefficient call routing within an IP telephony system (3CX).
 
-### Problem
-- Static routing logic not aligned with real-time demand
-- Manual updates required to adjust routing rules
-- Delays in reflecting operational changes
-- Limited visibility into call distribution efficiency
+### Problem Statement
+The existing system suffered from several reliability and operational gaps:
+* **Systemic Latency:** Static routing logic was not aligned with real-time agent availability.
+* **Manual Bottlenecks:** Updates required manual CSV manipulation and database uploads, introducing human error and deployment delays.
+* **Lack of Observability:** Limited visibility into real-time call distribution and queue bottlenecks.
 
-### Impact
-- High call abandonment rate
-- Increased wait times
-- Poor customer experience
-- Inefficient use of available agents
+### Analysis & Root Cause
+An audit of the 3CX and PostgreSQL logs revealed that the **Call Abandonment Rate** was directly correlated with "Micro-outages" in agent availability—periods where the system failed to distribute calls despite having idle resources.
 
-### Existing Process
-- Routing rules updated manually based on CSV files
-- Data received from business teams and uploaded into a PostgreSQL database
-- Changes applied with delay, limiting responsiveness
+---
 
-### Improvements Implemented
-- Redesigned routing logic using low-code tools in 3CX
-- Improved distribution rules based on agent availability
-- Increased alignment between system behavior and operational needs
+### Solutions Implemented
 
-### Proposed Enhancements
-- Automate CSV ingestion into the database
-- Introduce scheduled or event-driven updates for routing rules
-- Add validation layer to prevent inconsistent data inputs
-- Improve observability of routing performance (call distribution, wait time, abandonment rate)
+#### 1. Logic Redesign (Visual Flow Integration)
+* Replaced static rules with dynamic distribution logic using 3CX visual flow tools.
+* Implemented **"Skill-Based Routing"** to ensure high-priority calls reached the most qualified agents faster.
 
-### Outcome
-- Reduction in call abandonment rate
-- Improved response time and call distribution
-- Better alignment between technical system and business operations
+#### 2. Data Pipeline & Backend
+* Integrated the routing engine with a **PostgreSQL** database for persistent state management.
+* Structured the database schema to handle timestamps and agent status codes for better traceability.
 
-### Metrics
-**Business Impact**
-- Call abandonment rate (primary success metric)
+#### 3. Proposed Engineering Enhancements (Roadmap)
+* **Automated Ingestion:** Replacing manual CSV uploads with an automated ETL pipeline.
+* **Validation Layer:** Implementing a pre-deployment check to prevent inconsistent routing data from reaching production.
+* **Predictive Scaling:** Using historical data to trigger routing rule changes *before* peak hours.
 
-**User Experience**
-- Average wait time
+---
 
-**Operational Efficiency**
-- Call distribution efficiency
+### Business & Technical Outcomes
 
-### Insight
-Reduction in abandonment rate was directly correlated with improved call distribution and reduced wait times.
+| Metric | Outcome | Impact |
+| :--- | :--- | :--- |
+| **Abandonment Rate** | Significant Reduction | Improved Customer Satisfaction (CSAT) |
+| **Response Time** | Optimized Distribution | Reduced agent idle time & customer wait time |
+| **Operational Agility** | Near Real-time Updates | Reduced "Time-to-Change" from hours to minutes |
 
-### Key Learnings
-- Manual processes introduce latency and limit scalability
-- Automation improves responsiveness and consistency
-- System design must adapt to real-time operational needs
+### Key Learnings for SRE
+* **Automation is Reliability:** Manual processes are a source of toil and failure; automating the routing updates increases system consistency.
+* **Cross-Domain Application:** SRE principles (Observability, SLOs, Error Budgets) are highly effective when applied to Business Operations and Telephony.
+* **End-to-End Ownership:** System design must account for the real-time operational needs of the business stakeholders.
+
+---
+*Note: This optimization directly supported the scalability of the support center during high-growth periods.*
